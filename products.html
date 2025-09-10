@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Universehive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Universe<span class="logo-accent">hive</span></span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-category="electronics">Electronics</a></li>
+                            <li><a href="#" data-category="software">Software</a></li>
+                            <li><a href="#" data-category="gadgets">Gadgets</a></li>
+                            <li><a href="#" data-category="accessories">Accessories</a></li>
+                            <li><a href="#" data-category="smart-home">Smart Home</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <h1>Product Reviews & Recommendations</h1>
+            <p>Discover the best products tested and reviewed by our experts</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <h2>Featured Products</h2>
+                <div class="sort-filter">
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-badge">Editor's Choice</div>
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_1280.jpg" alt="Premium Wireless Headphones">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Premium Wireless Headphones</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.5 (324 reviews)</span>
+                        </div>
+                        <p class="product-description">Experience crystal-clear audio with active noise cancellation and 30-hour battery life.</p>
+                        <div class="product-price">
+                            <span class="current-price">$299</span>
+                            <span class="original-price">$399</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="gadgets">
+                    <div class="product-badge hot">Hot</div>
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2019/08/26/22/02/apple-watch-4437290_1280.jpg" alt="Smartwatch Pro">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Smartwatch Pro 2025</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>5.0 (512 reviews)</span>
+                        </div>
+                        <p class="product-description">Advanced health tracking, GPS, and 7-day battery life in a sleek design.</p>
+                        <div class="product-price">
+                            <span class="current-price">$449</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2020/05/26/07/43/webcam-5221796_1280.jpg" alt="4K Webcam">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>4K Professional Webcam</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>4.0 (189 reviews)</span>
+                        </div>
+                        <p class="product-description">Ultra HD video quality with AI-powered auto-framing and background blur.</p>
+                        <div class="product-price">
+                            <span class="current-price">$179</span>
+                            <span class="original-price">$229</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="software">
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/05/31/15/14/laptop-792183_1280.jpg" alt="Productivity Suite">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Productivity Suite Pro</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.7 (892 reviews)</span>
+                        </div>
+                        <p class="product-description">All-in-one productivity software with AI-powered features and cloud sync.</p>
+                        <div class="product-price">
+                            <span class="current-price">$99/year</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Try Free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2020/04/21/06/41/macbook-5071370_1280.jpg" alt="USB-C Hub">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>12-in-1 USB-C Hub</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.9 (1.2k reviews)</span>
+                        </div>
+                        <p class="product-description">Expand your laptop's connectivity with HDMI, USB 3.0, SD card, and more.</p>
+                        <div class="product-price">
+                            <span class="current-price">$59</span>
+                            <span class="original-price">$89</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="smart-home">
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2019/01/31/20/52/echo-dot-3967644_1280.jpg" alt="Smart Speaker">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>AI Smart Speaker</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>4.2 (567 reviews)</span>
+                        </div>
+                        <p class="product-description">Premium sound quality with built-in smart assistant and home automation.</p>
+                        <div class="product-price">
+                            <span class="current-price">$149</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="gadgets">
+                    <div class="product-badge hot">Hot</div>
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2020/05/26/09/32/product-5222398_1280.jpg" alt="Wireless Earbuds">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>True Wireless Earbuds Pro</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.6 (2.3k reviews)</span>
+                        </div>
+                        <p class="product-description">Premium audio with ANC, transparency mode, and wireless charging case.</p>
+                        <div class="product-price">
+                            <span class="current-price">$199</span>
+                            <span class="original-price">$249</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_1280.jpg" alt="Gaming Mouse">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>RGB Gaming Mouse</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.8 (456 reviews)</span>
+                        </div>
+                        <p class="product-description">16,000 DPI sensor with customizable RGB lighting and programmable buttons.</p>
+                        <div class="product-price">
+                            <span class="current-price">$79</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_1280.jpg" alt="Laptop Stand">
+                        <div class="product-overlay">
+                            <button class="btn-view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Ergonomic Laptop Stand</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.4 (678 reviews)</span>
+                        </div>
+                        <p class="product-description">Adjustable aluminum stand for improved posture and laptop cooling.</p>
+                        <div class="product-price">
+                            <span class="current-price">$39</span>
+                            <span class="original-price">$59</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">Read Review</a>
+                            <a href="#" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more">
+                <button class="btn-load-more">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Electronics</h3>
+                    <p>Laptops, tablets, and more</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Software</h3>
+                    <p>Apps and productivity tools</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Gadgets</h3>
+                    <p>Smart devices and wearables</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-headphones"></i>
+                    <h3>Accessories</h3>
+                    <p>Cases, cables, and more</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Smart Home</h3>
+                    <p>IoT and automation devices</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>Gaming gear and accessories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Universe<span class="logo-accent">hive</span></h3>
+                    <p>Your trusted source for insightful articles, product reviews, and platform recommendations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Gadgets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Smart Home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universehive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - Universehive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Universe<span class="logo-accent">hive</span></span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#blog">Technology</a></li>
+                            <li><a href="index.html#blog">Lifestyle</a></li>
+                            <li><a href="index.html#blog">Travel</a></li>
+                            <li><a href="index.html#blog">Health & Wellness</a></li>
+                            <li><a href="index.html#blog">Business</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <div class="container">
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="article-meta-top">
+                    <span class="category-tag" id="articleCategory">Technology</span>
+                    <span class="reading-time"><i class="far fa-clock"></i> <span id="readingTime">5 min read</span></span>
+                </div>
+                <h1 class="article-title" id="articleTitle">Loading...</h1>
+                <div class="article-meta">
+                    <div class="author-info">
+                        <img src="https://ui-avatars.com/api/?name=Author&background=2ecc71&color=fff" alt="Author" class="author-avatar">
+                        <div>
+                            <span class="author-name" id="articleAuthor">Loading...</span>
+                            <span class="publish-date" id="articleDate">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="share-buttons">
+                        <button class="share-btn" title="Share on Facebook"><i class="fab fa-facebook-f"></i></button>
+                        <button class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></button>
+                        <button class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Featured Image -->
+            <div class="featured-image">
+                <img id="articleImage" src="https://cdn.pixabay.com/photo/2016/11/29/06/08/analysis-1867751_1280.jpg" alt="Article Image">
+            </div>
+
+            <!-- Article Body -->
+            <div class="article-body" id="articleContent">
+                <p>Loading article content...</p>
+            </div>
+
+            <!-- Article Footer -->
+            <footer class="article-footer">
+                <div class="tags">
+                    <span class="tag">#technology</span>
+                    <span class="tag">#innovation</span>
+                    <span class="tag">#future</span>
+                </div>
+                
+                <div class="author-bio">
+                    <img src="https://ui-avatars.com/api/?name=Author&background=2ecc71&color=fff&size=80" alt="Author" class="bio-avatar">
+                    <div class="bio-content">
+                        <h4 id="bioAuthor">About the Author</h4>
+                        <p>Passionate writer and technology enthusiast with years of experience in the field. Dedicated to bringing you the latest insights and trends.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Related Articles -->
+            <section class="related-articles">
+                <h2>Related Articles</h2>
+                <div class="related-grid" id="relatedArticles">
+                    <!-- Related articles will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Comments Section -->
+            <section class="comments-section">
+                <h2>Comments</h2>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..." rows="4"></textarea>
+                    <div class="comment-form-footer">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn-primary">Post Comment</button>
+                    </div>
+                </form>
+                
+                <div class="comments-list">
+                    <div class="comment">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=3498db&color=fff" alt="Commenter">
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <strong>John Doe</strong>
+                                <span>2 hours ago</span>
+                            </div>
+                            <p>Great article! Very informative and well-written. Looking forward to more content like this.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="https://ui-avatars.com/api/?name=Jane+Smith&background=f39c12&color=fff" alt="Commenter">
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <strong>Jane Smith</strong>
+                                <span>5 hours ago</span>
+                            </div>
+                            <p>This really helped me understand the topic better. Thanks for sharing!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Universe<span class="logo-accent">hive</span></h3>
+                    <p>Your trusted source for insightful articles, product reviews, and platform recommendations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universehive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/article.js"></script>
+</body>
+</html>

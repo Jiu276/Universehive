@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universehive - Your Gateway to Digital Excellence</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Particles Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Universe<span class="logo-accent">hive</span></span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-category="technology">Technology</a></li>
+                            <li><a href="#" data-category="lifestyle">Lifestyle</a></li>
+                            <li><a href="#" data-category="travel">Travel</a></li>
+                            <li><a href="#" data-category="health">Health & Wellness</a></li>
+                            <li><a href="#" data-category="business">Business</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Universehive</h1>
+            <p class="hero-subtitle">Discover insightful articles, product reviews, and platform recommendations</p>
+            <button class="btn-primary">Explore Articles</button>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Articles</h2>
+            <div class="featured-grid">
+                <article class="featured-card large" onclick="window.location.href='article.html?id=1'" style="cursor: pointer;">
+                    <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Quantum Computing">
+                    <div class="featured-content">
+                        <span class="category-tag">Technology</span>
+                        <h3>Quantum Computing: Breaking New Boundaries</h3>
+                        <p class="meta"><i class="far fa-calendar"></i> August 15, 2025</p>
+                    </div>
+                </article>
+                <article class="featured-card" onclick="window.location.href='article.html?id=2'" style="cursor: pointer;">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_1280.jpg" alt="Mindful Living">
+                    <div class="featured-content">
+                        <span class="category-tag">Lifestyle</span>
+                        <h3>Mindful Living: A Guide to Daily Wellness</h3>
+                        <p class="meta"><i class="far fa-calendar"></i> July 28, 2025</p>
+                    </div>
+                </article>
+                <article class="featured-card" onclick="window.location.href='article.html?id=3'" style="cursor: pointer;">
+                    <img src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Digital Marketing">
+                    <div class="featured-content">
+                        <span class="category-tag">Business</span>
+                        <h3>Digital Marketing Trends That Define 2025</h3>
+                        <p class="meta"><i class="far fa-calendar"></i> June 10, 2025</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                    <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+                    <button class="filter-btn" data-filter="travel">Travel</button>
+                    <button class="filter-btn" data-filter="health">Health</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                </div>
+            </div>
+            
+            <div class="blog-grid" id="blogGrid">
+                <!-- Article 1 -->
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Quantum Computing">
+                        <span class="date-badge">Aug 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Technology</span>
+                        <h3><a href="article.html?id=1">Quantum Computing: Breaking New Boundaries</a></h3>
+                        <p>Explore how quantum computing is revolutionizing data processing and solving complex problems that traditional computers cannot handle.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Sarah Chen</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-category="lifestyle">
+                    <div class="blog-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_1280.jpg" alt="Wellness">
+                        <span class="date-badge">Jul 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Lifestyle</span>
+                        <h3><a href="article.html?id=2">Mindful Living: A Guide to Daily Wellness</a></h3>
+                        <p>Discover practical tips for incorporating mindfulness into your daily routine and achieving better work-life balance.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Emma Wilson</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-category="business">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Digital Marketing">
+                        <span class="date-badge">Jun 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Business</span>
+                        <h3><a href="article.html?id=3">Digital Marketing Trends That Define 2025</a></h3>
+                        <p>Stay ahead of the curve with these emerging digital marketing strategies that are reshaping online business.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Michael Torres</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card" data-category="travel">
+                    <div class="blog-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/03/05/00/34/panorama-2117310_1280.jpg" alt="Tropical Paradise">
+                        <span class="date-badge">May 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Travel</span>
+                        <h3><a href="article.html?id=4">Tropical Paradise: Best Islands to Visit</a></h3>
+                        <p>Escape to these breathtaking tropical destinations that offer pristine beaches, crystal waters, and unforgettable experiences.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Lisa Anderson</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card" data-category="health">
+                    <div class="blog-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/08/11/08/04/vegetables-1584999_1280.jpg" alt="Healthy Eating">
+                        <span class="date-badge">Apr 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Health</span>
+                        <h3><a href="article.html?id=5">Superfoods: Nature's Nutritional Powerhouses</a></h3>
+                        <p>Learn about nutrient-dense superfoods that can boost your immune system and enhance overall health.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Dr. James Park</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cybersecurity">
+                        <span class="date-badge">Mar 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Technology</span>
+                        <h3><a href="article.html?id=6">Cybersecurity Best Practices for 2025</a></h3>
+                        <p>Protect your digital life with these essential cybersecurity tips and tools for personal and professional use.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Alex Johnson</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="blog-card" data-category="lifestyle">
+                    <div class="blog-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg" alt="Home Design">
+                        <span class="date-badge">Feb 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Lifestyle</span>
+                        <h3><a href="article.html?id=7">Sustainable Home Design Trends</a></h3>
+                        <p>Transform your living space with eco-friendly design ideas that combine style, comfort, and environmental consciousness.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Rachel Green</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="blog-card" data-category="business">
+                    <div class="blog-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/05/31/15/07/business-792113_1280.jpg" alt="Remote Work">
+                        <span class="date-badge">Feb 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Business</span>
+                        <h3><a href="article.html?id=8">Remote Work Revolution: Building Virtual Teams</a></h3>
+                        <p>Master the art of managing remote teams with proven strategies for communication, collaboration, and productivity.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> David Miller</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="blog-card" data-category="health">
+                    <div class="blog-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_1280.jpg" alt="Fitness">
+                        <span class="date-badge">Jan 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Health</span>
+                        <h3><a href="article.html?id=9">HIIT Workouts: Maximum Results in Minimum Time</a></h3>
+                        <p>Discover high-intensity interval training routines that deliver impressive fitness results in just 20 minutes a day.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Coach Maria</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 10 -->
+                <article class="blog-card" data-category="travel">
+                    <div class="blog-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg" alt="European Cities">
+                        <span class="date-badge">Jan 2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="category-tag">Travel</span>
+                        <h3><a href="article.html?id=10">European Cities: A Cultural Journey</a></h3>
+                        <p>Explore the rich history, stunning architecture, and vibrant culture of Europe's most captivating cities.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Tom Bennett</span>
+                            <span><i class="far fa-clock"></i> 9 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest articles and product reviews delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Universe<span class="logo-accent">hive</span></h3>
+                    <p>Your trusted source for insightful articles, product reviews, and platform recommendations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universehive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Social Media Widget -->
+    <div class="social-widget">
+        <div class="widget-toggle">
+            <i class="fas fa-share-alt"></i>
+        </div>
+        <div class="widget-links">
+            <a href="#" class="widget-link facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="widget-link twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="widget-link instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="widget-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="widget-link youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
